@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FITNESS GARAGE</title>
+    <style>
+        /* reset */
+        body{
+            color: aliceblue;
+            margin: 0px;
+            padding: 0px;
+            background-repeat: no-repeat;
+            font-family: fantasy;
+            background-image: url(img/p2.jpg);
+            height: 100vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-bottom: 50px;
+            padding: 0px;   
+        }
+
+
+        /* this is given to the left logo and text */
+        .left{
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            left: 6px;
+            top: 0px;
+            color: rgb(255, 255, 255);
+            line-height: 0px;    
+        }
+
+
+        .center{
+            /* border: 2px solid gold; */
+            display: block;
+            margin: 15px auto ;
+            width: 80%;
+            padding: auto;
+        }
+
+
+        .right{
+          
+            display: inline-block;
+            position: absolute;
+            right: 20px;
+            top: 10px;
+            margin-right: auto;
+            padding: 3px;
+        }
+
+
+        .navbar ul{
+            display: block;
+        }
+
+
+        /* to the navigation bar */
+        .navbar{
+            display: inline-block;
+        }
+
+
+        /* this is to lists inside the ul */
+        .navbar li{
+            display: inline-block;
+        }
+
+
+        /* this is to the ancor tag */
+        .navbar  li a{
+            color: aliceblue;
+            font-size: 15px;
+            text-decoration: none;
+            padding: 7px 7px;
+            margin: auto 15px;
+        }
+
+
+        /* this is given to relefection to bar */
+        .navbar  li a:hover, .navbar  li a:active{
+            text-decoration: underline;
+            color:black;
+            background-color: rgb(220, 199, 82);
+            border-radius: 15px    
+        }
+
+
+        .header{
+            top: 10px;
+        }
+
+
+        /* for the image */
+        .left img{
+            filter: invert(100%);
+            width: 110px;
+            height: 60px;    
+        }
+
+
+        /* to the text */
+        .left div {
+            text-align: center;
+            padding-bottom: 5px;
+        
+        }
+
+
+        /* this is for button */
+        .btn{
+            margin: 5px 5px;
+            padding: 5px 14px;
+            border: 2px solid black;
+            border-radius: 15px;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+
+        .btn:hover{
+            background-color:rgb(73, 73, 198);
+            color: aliceblue;
+            border-radius: 15px;
+            font-family: fantasy;    
+        }
+
+        .container{
+            border: 5px solid rgb(255, 255, 255);
+            margin: 40px 40px;
+            padding: 5px 5px;
+            width: 35%;
+            height: 70%;
+            color: rgb(239, 239, 235);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            word-spacing: 5;
+            border-radius: 55px; 
+        }
+      
+
+      
+        .form-group input{
+            text-align: center;
+            padding: 12px 5px;
+            margin: 10px auto;
+            font-size: 15px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            display: block;
+            width: 50%;
+            border-radius: 12px;
+
+        }
+        .container h1{
+            text-align: center;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-style: italic;
+        }
+        .container button{
+            margin: 10px auto;
+            width: 25%;
+            padding: 5px 5px;
+            display: block;   
+        }
+        .container button a{
+            text-decoration: none;
+        }
+      
+        
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!-- for logo -->
+        <div class="left">
+            <img src="img/pngwing.com.png" alt="">
+            <div>Fitness Garage</div>
+            
+           
+
+        </div>
+        <!-- for navigation bar -->
+        <div class="center">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            
+
+        </div>
+        <!-- search -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+            
+
+        </div>  
+      
+    </header>
+   
+    <div class="container">
+        <h1> Enroll Your Details</h1>
+        <form action="no.js">
+            <div class="form-group">
+                <input type="text" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter Your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter Your Email">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter Your Phone Number">
+            </div>
+            <button class="btn"><a href="second.html" target="_blank">Submit</a> </button><button class="btn"><a href="#">Reset</a> </button>
+        </form>
+    </div>
+   
+    
+</body>
+</html>
